@@ -1,0 +1,34 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js",
+    "start": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibaobao123/React-Node.js-JWT-Project-Backend.git"
+  },
+  "author": "Chibaobaochi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chibaobao123/React-Node.js-JWT-Project-Backend.git/issues"
+  },
+  "homepage": "https://github.com/chibaobao123/React-Node.js-JWT-Project-Backend.git#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "ejs": "3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.4"
+  }
+}
