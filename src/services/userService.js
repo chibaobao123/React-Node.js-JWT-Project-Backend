@@ -53,10 +53,11 @@ const handleLoginService = async (email, password) => {
           expiresIn: process.env.JWT_EXPIRE,
         });
         return {
+          EC: 0,
           access_token,
           user: {
-            email,
-            name,
+            email: user.email,
+            name: user.name,
           },
         };
       }
