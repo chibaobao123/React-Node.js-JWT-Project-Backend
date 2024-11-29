@@ -6,10 +6,12 @@ const {
 } = require("../controllers/userController");
 
 const delay = require("../middleware/delay");
+const JWT_Middleware = require("../middleware/JWT");
 
 const routerAPI = express.Router();
 
-// routerAPI.get("*", delay);
+// routerAPI.all("*", delay);
+routerAPI.all("*", JWT_Middleware);
 
 routerAPI.get("/", (req, res) => {
   return res.status(200).json("Hello, world!");
