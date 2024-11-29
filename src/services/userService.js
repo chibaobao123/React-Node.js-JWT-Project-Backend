@@ -89,7 +89,7 @@ const handleLoginService = async (email, password) => {
 const getUsersService = async () => {
   try {
     // Get users
-    let result = await User.find({});
+    let result = await User.find({}).select("-password");
     return result;
   } catch (error) {
     console.log(error);
